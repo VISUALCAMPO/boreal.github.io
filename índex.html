@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nosso Guia de Conquistas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f8f7;--card:#ffffff;--ink:#14213d;--muted:#465468;--line:#c9d4d0;--accent:#0b6b62;--accent-soft:#dff1ee;--gold:#8a4b08;--gold-soft:#fbeed9;--warn:#fff4d6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a1f;--card:#17262c;--ink:#f1f5f4;--muted:#b7c6c4;--line:#33494f;--accent:#5fd1c2;--accent-soft:#16363a;--gold:#f0b463;--gold-soft:#3a2b14;--warn:#3a3116}}
+:root[data-theme="dark"]{--bg:#0f1a1f;--card:#17262c;--ink:#f1f5f4;--muted:#b7c6c4;--line:#33494f;--accent:#5fd1c2;--accent-soft:#16363a;--gold:#f0b463;--gold-soft:#3a2b14;--warn:#3a3116}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Atkinson Hyperlegible",Verdana,Tahoma,sans-serif;font-size:21px;line-height:1.6}
+main{max-width:760px;margin:0 auto;padding:20px 18px 60px}
+h1{font-size:2.1rem;line-height:1.2;margin:8px 0 8px}
+h2{font-size:1.55rem;line-height:1.25;margin:44px 0 10px;padding-top:14px;border-top:3px solid var(--accent)}
+h3{font-size:1.2rem;margin:22px 0 6px;color:var(--accent)}
+p{margin:0 0 14px}
+.lead{color:var(--muted)}
+.box{background:var(--card);border:2px solid var(--line);border-radius:12px;padding:16px 18px;margin:16px 0}
+.care{background:var(--warn);border-color:var(--gold)}
+.care h3{color:var(--gold);margin-top:0}
+ul.plain{margin:0;padding-left:1.2em}
+ul.plain li{margin:6px 0}
+.check{list-style:none;margin:0;padding:0}
+.check li{margin:0}
+.check label{display:flex;gap:14px;align-items:flex-start;padding:12px 6px;border-bottom:1px solid var(--line);cursor:pointer}
+.check input{flex:0 0 30px;width:30px;height:30px;margin:2px 0 0;accent-color:var(--accent)}
+.check input:checked+span{color:var(--muted);text-decoration:line-through}
+.check input:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top}
+th{background:var(--accent-soft)}
+.progress{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--accent);color:#fff;border-radius:10px;padding:10px 14px;margin:14px 0;font-weight:700;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.bar{height:10px;background:rgba(255,255,255,.35);border-radius:6px;flex:1 1 100%;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:#fff}
+button{font:inherit;font-weight:700;background:var(--gold);color:#fff;border:0;border-radius:10px;padding:12px 20px;min-height:48px;cursor:pointer}
+button:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.milestone{background:var(--gold-soft);border-left:6px solid var(--gold);padding:12px 16px;border-radius:8px;margin:16px 0}
+nav a{color:var(--accent);font-weight:700}
+nav ul{padding-left:1.2em}
+@media print{body{font-size:15pt;background:#fff;color:#000}.progress,button,nav{display:none}h2{break-after:avoid}.box,.milestone{break-inside:avoid}}
+</style>
+</head>
+<body>
+<main>
+<h1>Nosso Guia de Conquistas</h1>
+<p class="lead">Um passo de cada vez, com calma e com saúde, para viver de forma leve o que mais importa: trabalhar com prazer, cuidar de pessoas, ver a aurora boreal e viajar bastante. Feito para Daniel e Elena, começando em setembro de 2026.</p>
+
+<div class="progress" aria-live="polite"><span>Conquistas marcadas</span><span id="count">0 de 0</span><div class="bar"><i id="fill"></i></div></div>
+<button onclick="window.print()">Imprimir este guia</button>
+
+<nav class="box" aria-label="Índice">
+<strong>Onde está cada parte</strong>
+<ul>
+<li><a href="#cuidados">Cuidados antes de começar</a></li>
+<li><a href="#sonhos">Nossos sonhos e o que custam</a></li>
+<li><a href="#etapa1">Etapa 1: os primeiros 30 dias</a></li>
+<li><a href="#etapa2">Etapa 2: meses 2 e 3</a></li>
+<li><a href="#etapa3">Etapa 3: até completar 1 ano</a></li>
+<li><a href="#etapa4">Etapa 4: anos 2 e 3</a></li>
+<li><a href="#etapa5">Etapa 5: anos 4 e 5</a></li>
+<li><a href="#viagem">Cuidados para viajar</a></li>
+<li><a href="#revisao">Revisão de todo mês</a></li>
+</ul>
+</nav>
+
+<h2 id="cuidados">Cuidados antes de começar</h2>
+<div class="box care">
+<h3>Saúde vem primeiro</h3>
+<ul class="plain">
+<li>Marquem um check-up médico (coração, pressão, visão, audição, sono) antes de aumentar o ritmo de trabalho ou de viajar.</li>
+<li>Trabalhem no máximo 4 dias por semana, com 1 dia inteiro livre. Façam uma pausa a cada 90 minutos.</li>
+<li>Uma meta de cada vez. Pouco e constante vale mais que muito e cansativo.</li>
+<li>As terapias (Reiki, reflexologia, biomagnetismo, CNV, escuta) apoiam o bem-estar e não substituem tratamento médico. Nunca prometam cura.</li>
+<li>Os valores deste guia são estimativas de referência, não promessas. Confirmem preços atuais e conversem com um contador antes de decidir.</li>
+</ul>
+</div>
+<div class="box">
+<h3>Sinais para desacelerar</h3>
+<p>Cansaço que não passa, sono ruim por mais de uma semana, dor, irritação ou esquecimento de compromissos. Se aparecer, cortem cerca de 20% da agenda e conversem com o médico.</p>
+</div>
+
+<h2 id="sonhos">Nossos sonhos e o que custam</h2>
+<p>Valores estimados para duas pessoas. Confirmem os preços na hora de comprar.</p>
+<div class="tablewrap"><table>
+<tr><th>Sonho</th><th>Estimativa</th></tr>
+<tr><td>Reserva de segurança</td><td>R$ 200 mil</td></tr>
+<tr><td>Aurora boreal (15 dias)</td><td>R$ 40 a 70 mil</td></tr>
+<tr><td>Europa e Países Baixos (1 mês)</td><td>R$ 60 a 120 mil</td></tr>
+<tr><td>Viagens do dia a dia, por ano</td><td>R$ 60 a 120 mil</td></tr>
+<tr><td>Volvo EX90</td><td>R$ 700 a 850 mil (conferir o preço atual)</td></tr>
+</table></div>
+<p style="margin-top:14px"><strong>Ordem sugerida:</strong> primeiro a reserva, depois a aurora boreal, depois a Europa, e por último o carro. Assim as viagens não dependem da compra maior.</p>
+
+<h2 id="etapa1">Etapa 1: os primeiros 30 dias</h2>
+<p>Objetivo: organizar o trabalho técnico e definir preços das terapias.</p>
+<h3>Semana 1: organizar</h3>
+<ul class="check">
+<li><label><input type="checkbox"><span>Marcar o check-up médico do casal.</span></label></li>
+<li><label><input type="checkbox"><span>Listar todos os clientes com Octopus 123 e 300 (nome, cidade, contato, estado do aparelho).</span></label></li>
+<li><label><input type="checkbox"><span>Escrever a proposta de contrato anual de manutenção em 1 página.</span></label></li>
+<li><label><input type="checkbox"><span>Conversar com a Elena sobre os combos e preços do Raíces del Amor.</span></label></li>
+</ul>
+<h3>Semana 2: apresentar</h3>
+<ul class="check">
+<li><label><input type="checkbox"><span>Apresentar a proposta aos 5 maiores clientes.</span></label></li>
+<li><label><input type="checkbox"><span>Definir 3 combos de terapia e a tabela de preços.</span></label></li>
+<li><label><input type="checkbox"><span>Abrir agenda de sessões online (2 horários por dia, 3 dias por semana).</span></label></li>
+</ul>
+<h3>Semana 3: fechar</h3>
+<ul class="check">
+<li><label><input type="checkbox"><span>Fechar os 2 primeiros contratos técnicos.</span></label></li>
+<li><label><input type="checkbox"><span>Fazer as primeiras 5 sessões online.</span></label></li>
+<li><label><input type="checkbox"><span>Convidar 2 técnicos de confiança para uma conversa de parceria.</span></label></li>
+</ul>
+<h3>Semana 4: planejar</h3>
+<ul class="check">
+<li><label><input type="checkbox"><span>Esboçar o curso técnico presencial.</span></label></li>
+<li><label><input type="checkbox"><span>Esboçar o curso online de CNV.</span></label></li>
+<li><label><input type="checkbox"><span>Definir a meta de faturamento dos próximos 90 dias.</span></label></li>
+</ul>
+<div class="milestone"><strong>Conquista do mês 1:</strong> 2 contratos fechados, preços das terapias definidos e check-up marcado.</div>
+
+<h2 id="etapa2">Etapa 2: meses 2 e 3</h2>
+<p>Objetivo: ter renda recorrente e alguém para ajudar na estrada.</p>
+<ul class="check">
+<li><label><input type="checkbox"><span>Chegar a 3 contratos ativos no mês 2 e 5 no mês 3.</span></label></li>
+<li><label><input type="checkbox"><span>Treinar 2 técnicos parceiros para o primeiro atendimento. O Daniel orienta por vídeo e viaja só nos casos difíceis.</span></label></li>
+<li><label><input type="checkbox"><span>Definir o preço da consultoria remota por videochamada.</span></label></li>
+<li><label><input type="checkbox"><span>Criar uma página simples (Instagram e link único) para as terapias.</span></label></li>
+<li><label><input type="checkbox"><span>Completar 10 sessões online.</span></label></li>
+</ul>
+<div class="milestone"><strong>Conquista dos 3 meses:</strong> 5 contratos, 2 parceiros em treinamento e as terapias visíveis na internet.</div>
+
+<h2 id="etapa3">Etapa 3: até completar 1 ano</h2>
+<h3>Meses 4 a 6: terapias</h3>
+<ul class="check">
+<li><label><input type="checkbox"><span>Combos e preços funcionando no Raíces del Amor.</span></label></li>
+<li><label><input type="checkbox"><span>Agenda online aberta toda semana.</span></label></li>
+<li><label><input type="checkbox"><span>Curso de CNV (8 semanas) pronto para abrir inscrições.</span></label></li>
+</ul>
+<h3>Meses 7 a 9: ensinar</h3>
+<ul class="check">
+<li><label><input type="checkbox"><span>Primeira turma do curso técnico presencial (cerca de 8 alunos).</span></label></li>
+<li><label><input type="checkbox"><span>Primeira turma online de CNV.</span></label></li>
+<li><label><input type="checkbox"><span>Gravar o primeiro material digital (manual técnico ou curso de Reiki 1).</span></label></li>
+</ul>
+<h3>Meses 10 a 12: retiro e revisão</h3>
+<ul class="check">
+<li><label><input type="checkbox"><span>Planejar e realizar o primeiro retiro do Raíces del Amor (10 a 15 pessoas).</span></label></li>
+<li><label><input type="checkbox"><span>Revisar os números do ano com um contador.</span></label></li>
+<li><label><input type="checkbox"><span>Escolher a data da aurora boreal (a temporada vai de setembro a março).</span></label></li>
+</ul>
+<div class="milestone"><strong>Conquista do ano 1:</strong> três fontes de renda funcionando (contratos, ensino e terapias) e a viagem da aurora planejada.</div>
+
+<h2 id="etapa4">Etapa 4: anos 2 e 3</h2>
+<p>Objetivo: menos estrada, mais conhecimento trabalhando por vocês.</p>
+<ul class="check">
+<li><label><input type="checkbox"><span>Ter 8 a 12 contratos anuais ativos.</span></label></li>
+<li><label><input type="checkbox"><span>Realizar 3 a 4 turmas por ano dos cursos (técnico e CNV).</span></label></li>
+<li><label><input type="checkbox"><span>Fazer 1 a 2 retiros por ano.</span></label></li>
+<li><label><input type="checkbox"><span>Reduzir as viagens de campo até que menos de 30% da renda dependa de estrada (meta para 24 meses).</span></label></li>
+<li><label><input type="checkbox"><span>Completar a reserva de segurança.</span></label></li>
+<li><label><input type="checkbox"><span><strong>Viajar para ver a aurora boreal.</strong></span></label></li>
+<li><label><input type="checkbox"><span><strong>Viajar pela Europa e Países Baixos.</strong></span></label></li>
+</ul>
+<div class="milestone"><strong>Conquista do ano 3:</strong> aurora vista, Europa visitada e trabalho que cabe em 4 dias por semana.</div>
+
+<h2 id="etapa5">Etapa 5: anos 4 e 5</h2>
+<ul class="check">
+<li><label><input type="checkbox"><span>Comprar o Volvo EX90 quando a reserva e as viagens estiverem garantidas.</span></label></li>
+<li><label><input type="checkbox"><span>Manter uma viagem por ano como rotina.</span></label></li>
+<li><label><input type="checkbox"><span>Passar o trabalho de campo para os técnicos parceiros e ficar com consultoria, ensino e terapias.</span></label></li>
+<li><label><input type="checkbox"><span>Registrar por escrito o que sabem, para que fique como legado.</span></label></li>
+</ul>
+<div class="milestone"><strong>Conquista final:</strong> a estrada deixa de ser obrigação e passa a ser escolha.</div>
+
+<h2 id="viagem">Cuidados para viajar</h2>
+<div class="box">
+<ul class="plain">
+<li>Contratem seguro-viagem com boa cobertura médica.</li>
+<li>Levem remédios de uso contínuo e as receitas.</li>
+<li>Na aurora, o frio é forte: roupa em camadas, luvas, gorro e calçado antiderrapante.</li>
+<li>Combinem no máximo 1 ou 2 sessões online por dia durante a viagem, para descansar de verdade.</li>
+<li>Planejem trechos curtos, com um dia de descanso a cada poucos dias.</li>
+</ul>
+</div>
+
+<h2 id="revisao">Revisão de todo mês</h2>
+<p>Sentem juntos por 30 minutos e respondam:</p>
+<ol class="plain">
+<li>O que conseguimos fazer neste mês?</li>
+<li>Como estão nosso corpo, sono e ânimo?</li>
+<li>Quanto entrou e quanto saiu?</li>
+<li>Qual é a única meta do próximo mês?</li>
+</ol>
+<p style="margin-top:20px" class="lead">Este guia acompanha o ritmo de vocês. Se uma etapa levar mais tempo, tudo bem: o que importa é continuar com saúde.</p>
+</main>
+<script>
+(function(){
+var boxes=[].slice.call(document.querySelectorAll('.check input')),key='guia-conquistas-v1',saved={};
+try{saved=JSON.parse(localStorage.getItem(key)||'{}')||{}}catch(e){saved={}}
+function update(){var n=boxes.filter(function(b){return b.checked}).length;
+document.getElementById('count').textContent=n+' de '+boxes.length;
+document.getElementById('fill').style.width=(boxes.length?100*n/boxes.length:0)+'%'}
+boxes.forEach(function(b,i){b.checked=!!saved[i];b.addEventListener('change',function(){saved[i]=b.checked;
+try{localStorage.setItem(key,JSON.stringify(saved))}catch(e){}update()})});
+update();
+})();
+</script>
+</body>
+</html>
